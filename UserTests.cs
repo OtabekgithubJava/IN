@@ -43,7 +43,7 @@ namespace JobBoard.UnitTests
             var result = await userService.UpdateUser(userId, userDTO);
 
             Assert.Equal("Updated", result);
-            Assert.Equal(userDTO.FullName, existingUser.FullName);     because the assertion Assert.Equal(userDTO.FullName, existingUser.FullName) and Assert.Equal(userDTO.Email, existingUser.Email) are comparing the updated values from userDTO with the properties of existingUser.
+            Assert.Equal(userDTO.FullName, existingUser.FullName);     because the assertion Assert.Equal(userDTO.FullName, existingUser.FullName) and Assert.Equal(userDTO.Email, existingUser.Email) are comparing the updated values from userDTO with the properties of existingUser
             Assert.Equal(userDTO.Email, existingUser.Email);
         }
 
